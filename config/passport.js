@@ -16,13 +16,13 @@ module.exports = function(passport) {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'nishant.adpr@gmail.com',
-          pass: 'givemesomesunshine'
+          user: 'youremail@gmail.com',
+          pass: 'your passwprd'
         }
       });
       
       var mailOptions = {
-        from: 'nishant.adpr@gmail.com',
+        from: 'youremail@gmail.com',
         to: email,
         subject: 'Sending Email using Node.js',
         text: token
